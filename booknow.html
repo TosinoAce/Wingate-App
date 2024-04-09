@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wingate Exotic-Book Now</title>
+    <link rel="stylesheet" href="app.css" />
+    <link
+      rel="shortcut icon"
+      type="image/png"
+      href="./Images/wingate logo.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Courgette&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      .bookHero {
+        width: 100%;
+        padding: 130px 30px 70px 30px;
+        display: flex;
+        justify-content: space-around;
+        align-items: start;
+        min-height: 100vh;
+      }
+      .bookintro {
+        max-width: 400px;
+        padding: 20px;
+      }
+      .bookHero p {
+        font-family: "poppins", serif;
+        font-size: 12px;
+        margin: 15px 0;
+      }
+      .bookHero img {
+        width: 600px;
+      }
+      .bookHero h2 {
+        font-size: 35px;
+        font-family: "DM Serif Display", serif;
+        line-height: 100%;
+      }
+      .bookHero button {
+        padding: 8px 20px;
+        background-color: goldenrod;
+        color: #ffffff;
+        font-weight: 600;
+        font-family: "poppins", serif;
+        border: none;
+        cursor: pointer;
+        transition: 0.4s ease-in-out;
+      }
+      .bookContainer {
+        width: 100%;
+        min-height: 100vh;
+        padding: 50px 30px;
+        background-color: #ffffff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      #booknow-form {
+        font-family: "poppins", serif;
+        width: 80%;
+        padding: 20px 30px;
+        box-shadow: 0px 0px 7px -2px rgba(0, 0, 0, 0.75);
+        background-color: #ffffff;
+      }
+      #booknow-form > div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 10px 0;
+        gap: 10px;
+      }
+      #booknow-form > div > div {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        gap: 5px;
+      }
+      #booknow-form label {
+        font-weight: 500;
+        color: #012e49;
+        margin: 8px 0;
+      }
+      #booknow-form input,
+      select {
+        width: 100%;
+        border: none;
+        font-family: "poppins", serif;
+        font-size: 14px;
+        padding: 0 10px;
+        height: 35px;
+        background-color: #f4f6fc;
+      }
+      #booknow-form button {
+        border: none;
+        padding: 8px 15px;
+        background-color: goldenrod;
+        color: #ffffff;
+        font-family: "poppins", serif;
+        font-size: 14px;
+        font-weight: 500;
+        margin-top: 15px;
+        cursor: pointer;
+        transition: 0.4s ease-in-out;
+      }
+      #booknow-form button:hover,
+      .bookHero button:hover {
+        background-color: #ffffff;
+        color: goldenrod;
+        border: 1px solid goldenrod;
+      }
+      @media (max-width: 1024px) {
+        .bookHero {
+          padding: 100px 15px 20px 15px;
+          flex-direction: column-reverse;
+          justify-content: center;
+          align-items: center;
+          text-align: center;
+        }
+        .bookHero img {
+          width: 330px;
+        }
+        #booknow-form {
+          width: 100%;
+          padding: 20px;
+        }
+        .bookContainer {
+          padding: 30px 15px;
+        }
+        #booknow-form > div {
+          flex-wrap: wrap;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div id="logo">
+        <img src="./Images/wingate logo.png" alt="Wingate Hotel" />
+      </div>
+      <nav>
+        <ul class="navMenu">
+          <a href="./index.html">
+            <li class="navItem nav-link">Home</li>
+          </a>
+          <a href="./about.html">
+            <li class="navItem nav-link">About</li>
+          </a>
+          <a href="./facilities.html">
+            <li class="navItem nav-link">Facilities</li>
+          </a>
+          <a href="./accomodation.html">
+            <li class="navItem nav-link">Accomodation</li>
+          </a>
+          <a href="./room.html">
+            <li class="navItem nav-link">Room Price</li>
+          </a>
+          <a href="./contact.html">
+            <li class="navItem nav-link">Contact Us</li>
+          </a>
+          <a href="./booknow.html">
+            <li class="navItem nav-link" id="mobile-booknow">Book Now</li>
+          </a>
+        </ul>
+        <div id="bookNow">
+          <a href="./booknow.html"
+            ><button class="nav-link"><span>Book Now</span></button></a
+          >
+        </div>
+      </nav>
+      <div class="hamburger">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+    </header>
+    <section class="bookHero">
+      <div class="bookintro">
+        <h2>MAKE <br />RESERVATION</h2>
+        <p>
+          Welcome to our hotel reservation page, where comfort meets
+          convenience. Discover seamless booking tailored to your needs. With
+          our range of accommodations and personalized service, your stay
+          promises to be unforgettable. Book now and experience unparalleled
+          hospitality.
+        </p>
+        <a href="#reserve"><button>BOOK NOW</button></a>
+      </div>
+      <div>
+        <img src="./Images/bookimg.jpg" alt="booking image" />
+      </div>
+    </section>
+    <section class="bookContainer" id="reserve">
+      <form id="booknow-form">
+        <div>
+          <div>
+            <label for="">Full Name</label>
+            <input type="text" required placeholder="John Doe" />
+          </div>
+          <div>
+            <label for="">Email</label>
+            <input type="email" required placeholder="example@gmail.com" />
+          </div>
+        </div>
+        <div>
+          <div>
+            <label for="checkIn">Check In</label>
+            <input type="datetime-local" id="checkIn" required />
+          </div>
+          <div>
+            <label for="checkOut">Check Out</label>
+            <input type="datetime-local" id="checkOut" required />
+          </div>
+        </div>
+        <div>
+          <div>
+            <label for="adult">Adult</label>
+            <select name="adult" id="adult" required>
+              <option value="1-Adult">1 Adult</option>
+              <option value="2-Adults">2 Adults</option>
+              <option value="3-Adults">3 Adults</option>
+              <option value="4-Adults">4 Adults</option>
+              <option value="5-Adults">5 Adults</option>
+              <option value="6-Adults">6 Adults</option>
+            </select>
+          </div>
+          <div>
+            <label for="children">Children</label>
+            <select name="children" id="children" required>
+              <option value="1-Child">1 Child</option>
+              <option value="2-Children">2 Children</option>
+              <option value="3-Children">3 Children</option>
+              <option value="4-Children">4 Children</option>
+              <option value="5-Children">5 Children</option>
+              <option value="6-Children">6 Children</option>
+            </select>
+          </div>
+        </div>
+        <div>
+          <div>
+            <label for="rooms">Rooms</label>
+            <select name="rooms" id="rooms" required>
+              <option value="1-Room">1 Room</option>
+              <option value="2-Rooms">2 Rooms</option>
+              <option value="3-Rooms">3 Rooms</option>
+              <option value="4-Rooms">4 Rooms</option>
+              <option value="5-Rooms">5 Rooms</option>
+              <option value="6-Rooms">6 Rooms</option>
+            </select>
+          </div>
+          <div>
+            <label for="roomType">Room Type</label>
+            <select name="roomType" id="roomType" required>
+              <option value="Standard-Room">Standard Room</option>
+              <option value="Superior-Room">Superior Room</option>
+              <option value="Executive-Room">Executive Room</option>
+              <option value="Queen-Room">Queen Room</option>
+              <option value="Queenabik-Room">Queenabik Room</option>
+              <option value="Yemkol-Suite">Yemkol Suite</option>
+              <option value="TK-Suite">TK Suite</option>
+            </select>
+          </div>
+        </div>
+        <button type="submit">Make Reservation</button>
+      </form>
+    </section>
+    <footer>
+      <div class="footer">
+        <div class="footerSection">
+          <img src="./images/wingate logo.png" alt="wingate" />
+          <p id="brief">
+            Wingate Exotic, Ilorin's premier luxury hotel offering unparalleled
+            comfort and hospitality. Our tastefully appointed rooms and suites,
+            exquisite dining experiences, rejuvenating spa treatments, and
+            sophisticated event venues ensure a memorable stay for business and
+            leisure travelers alike. Come experience the epitome of elegance and
+            relaxation at Wingate Exotic Hotel, where every detail is
+            meticulously crafted to exceed your expectations.
+          </p>
+        </div>
+        <div class="footerSection">
+          <h2 class="">Quick Links</h2>
+          <ul>
+            <a href="./index.html"><li>Home</li></a>
+            <a href="./about.html"><li>About</li></a>
+            <a href="./facilities.html"><li>Facilities</li></a>
+            <a href="./accomodation.html"><li>Acomodation</li></a>
+            <a href="./room.html"><li>Room Price</li></a>
+            <a href="./contact.html"><li>Contact</li></a>
+            <a href="./booknow.html"><li>Book Now</li></a>
+          </ul>
+        </div>
+        <div class="footerSection">
+          <h2 class="">Follow Us</h2>
+          <ul>
+            <a href="#"><li>Facebook</li></a>
+            <a href="#"><li>Instagram</li></a>
+            <a href="#"><li>Twitter</li></a>
+          </ul>
+        </div>
+        <div class="footerSection">
+          <h2 class="">Subscribe To Our Newsletter</h2>
+          <p id="brief2">
+            Stay in the loop with all the latest updates, exclusive offers, and
+            exciting news by subscribing to our newsletter today!
+          </p>
+          <form name="submit-to-google-sheet">
+            <input type="email" name="Email" placeholder="Email" required />
+            <button type="submit">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="17"
+                height="17"
+                fill="currentColor"
+                class="bi bi-send-fill"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M15.964.686a.5.5 0 0 0-.65-.65L.767 5.855H.766l-.452.18a.5.5 0 0 0-.082.887l.41.26.001.002 4.995 3.178 3.178 4.995.002.002.26.41a.5.5 0 0 0 .886-.083zm-1.833 1.89L6.637 10.07l-.215-.338a.5.5 0 0 0-.154-.154l-.338-.215 7.494-7.494 1.178-.471z"
+                />
+              </svg>
+            </button>
+          </form>
+          <span id="msg"></span>
+        </div>
+      </div>
+      <div class="footerSection2">
+        <hr />
+        <p>Copyright©2024 Wingate Exotic</p>
+      </div>
+    </footer>
+    <script>
+      const scriptURL =
+        "https://script.google.com/macros/s/AKfycbyCf4caQxxYbR5vEMjyYfZTsTvJ3VWo76VBoyXDEf4NKeQ2XhkdkIqEERjXMgEvMvahOg/exec";
+      const form = document.forms["submit-to-google-sheet"];
+      const msg = document.getElementById("msg");
+
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        fetch(scriptURL, { method: "POST", body: new FormData(form) })
+          .then((response) => {
+            msg.innerHTML = "Thank You for Subscribing!";
+            setTimeout(() => {
+              msg.innerHTML = " ";
+            }, 5000);
+            form.reset();
+          })
+          .catch((error) => console.error("Error!", error.message));
+      });
+    </script>
+    <script src="app.js"></script>
+  </body>
+</html>

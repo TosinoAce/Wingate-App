@@ -1,0 +1,28 @@
+## Wingate intervention ##
+
+february/18/24 started creating a web solution for wingate exotic hotel.
+
+plan is to used the current layout design being used by wingate presently but also define and create a proper structure
+that suits the hotel perfectly
+will be making use of two unique colors along with white and black.
+  color 1: goldenrod
+  color 2: #012e49.
+
+make all the neccessary typo corrections noticed.
+correction of nav bar and navigation features.
+express properly the facilities that exist in the hotel.
+design corrections.
+efficiency adjustments.
+adding new upgradeable features.
+correction of the mobile view of the website which has been poorly represented.
+
+April/1/24 completed desktop view of the new website.
+discovered that the form isnt working (needs to be used/tested on a secure http connection.)
+
+12:20pm April/8/24 completed both mobile and desktop view representation of the website.
+considering creating a form for the reservation of halls for events too.
+make preparations to begin form testing over a secured http connection.
+
+later today: deploy the new website using onrender for secure http.
+and test if the form works over the secured connection. if this works i then receate for the reservation form before then moving
+to enhancing the form auto response in order to give specific tailored response to reservations made.

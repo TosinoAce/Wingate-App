@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wingate Exotic-Contact</title>
+    <link rel="stylesheet" href="app.css" />
+    <link
+      rel="shortcut icon"
+      type="image/png"
+      href="./Images/wingate logo.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Courgette&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      .contactContainer {
+        width: 100%;
+        min-height: 100vh;
+        padding: 50px;
+        padding-top: 90px;
+        padding-bottom: 0;
+        position: relative;
+      }
+      iframe {
+        width: 100%;
+        height: 300px;
+      }
+      .contactText {
+        position: absolute;
+        width: 85%;
+        min-height: 300px;
+        background-color: #f1f1f1;
+        box-shadow: -8px -8px 15px rgba(255, 2255, 255, 0.1),
+          8px 8px 15px rgba(0, 0, 0, 0.2);
+        left: 7.5%;
+        bottom: 70px;
+        text-align: center;
+        padding: 20px;
+        border-radius: 10px;
+      }
+      .contactText > div {
+        display: flex;
+        justify-content: space-around;
+        align-items: start;
+        flex-wrap: wrap;
+        margin-top: 20px;
+        padding: 20px;
+        gap: 30px;
+      }
+      .contactText > div div {
+        width: 200px;
+      }
+      .contactText > div div p {
+        margin-top: 10px;
+        font-size: 15px;
+        line-height: 130%;
+        font-family: "poppins", serif;
+      }
+      .textHead {
+        font-family: "DM Serif Display", serif;
+        font-weight: 300;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        user-select: none;
+      }
+      .textHead svg {
+        color: goldenrod;
+        margin-right: 10px;
+      }
+      .getInTouch {
+        width: 100%;
+        height: 400px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+      }
+      .getInTouch form {
+        width: 50%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        padding: 30px;
+      }
+      .getInTouch form input {
+        width: 100%;
+        margin-bottom: 20px;
+        height: 40px;
+        padding-left: 15px;
+        border: none;
+        font-family: "Poppins", sans-serif;
+        color: black;
+        caret-color: goldenrod;
+        box-shadow: -8px -8px 15px rgba(255, 2255, 255, 0.1),
+          8px 8px 15px rgba(0, 0, 0, 0.1);
+      }
+      input:focus {
+        outline: 1px solid goldenrod;
+        outline-offset: 2px;
+      }
+      #message:focus {
+        outline: 1px solid goldenrod;
+        outline-offset: 2px;
+      }
+      #message {
+        outline: none;
+        width: 100%;
+        border: none;
+        padding: 8px 5px 8px 15px;
+        margin: 0 0 20px 0;
+        font-family: "Poppins", sans-serif;
+        height: 100px;
+        resize: none;
+        color: black;
+        box-shadow: -8px -8px 15px rgba(255, 2255, 255, 0.1),
+          8px 8px 15px rgba(0, 0, 0, 0.1);
+        caret-color: goldenrod;
+      }
+      .getInTouch form button {
+        height: 35px;
+        width: 200px;
+        cursor: pointer;
+        color: #ffffff;
+        background-color: goldenrod;
+        border: none;
+        font-family: "poppins", serif;
+        font-size: 15px;
+        font-weight: 400;
+        transition: 0.4s ease-in-out;
+      }
+      .getInTouch form button:hover {
+        border: 1px solid goldenrod;
+        color: goldenrod;
+        background-color: transparent;
+      }
+      #phrase {
+        text-align: center;
+        font-family: "poppins", serif;
+        font-size: 16px;
+        margin-top: 10px;
+        user-select: none;
+      }
+      @media (max-width: 1024px) {
+        .contactText {
+          position: relative;
+          bottom: 20px;
+        }
+        iframe {
+          height: 200px;
+        }
+        .contactContainer {
+          padding: 90px 20px 0 20px;
+        }
+        .getInTouch form {
+          width: 95%;
+        }
+        #phrase {
+          margin-right: 10px;
+          margin-left: 10px;
+        }
+      }
+    </style>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init({
+          publicKey: "vris0xm7VHDmNzXKM",
+        });
+      })();
+    </script>
+  </head>
+  <body>
+    <header>
+      <div id="logo">
+        <img src="./Images/wingate logo.png" alt="Wingate Hotel" />
+      </div>
+      <nav>
+        <ul class="navMenu">
+          <a href="./index.html">
+            <li class="navItem nav-link">Home</li>
+          </a>
+          <a href="./about.html">
+            <li class="navItem nav-link">About</li>
+          </a>
+          <a href="./facilities.html">
+            <li class="navItem nav-link">Facilities</li>
+          </a>
+          <a href="./accomodation.html">
+            <li class="navItem nav-link">Accomodation</li>
+          </a>
+          <a href="./room.html">
+            <li class="navItem nav-link">Room Price</li>
+          </a>
+          <a href="./contact.html">
+            <li class="navItem nav-link">Contact Us</li>
+          </a>
+          <a href="./booknow.html">
+            <li class="navItem nav-link" id="mobile-booknow">Book Now</li>
+          </a>
+        </ul>
+        <div id="bookNow">
+          <a href="./booknow.html"
+            ><button class="nav-link"><span>Book Now</span></button></a
+          >
+        </div>
+      </nav>
+      <div class="hamburger">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+    </header>
+    <section class="contactContainer">
+      <div>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15784.7449115517!2d4.599196066126704!3d8.481265690110122!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1036536005a91d9b%3A0x7a2cbd65ba9680f!2sWingate%20Exotic!5e0!3m2!1sen!2sng!4v1707653018035!5m2!1sen!2sng"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+        <div class="contactText">
+          <h2 class="heading">CONTACT</h2>
+          <div>
+            <div>
+              <h2 class="textHead">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="30"
+                  height="30"
+                  fill="currentColor"
+                  class="bi bi-envelope-at-fill"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M2 2A2 2 0 0 0 .05 3.555L8 8.414l7.95-4.859A2 2 0 0 0 14 2zm-2 9.8V4.698l5.803 3.546zm6.761-2.97-6.57 4.026A2 2 0 0 0 2 14h6.256A4.5 4.5 0 0 1 8 12.5a4.49 4.49 0 0 1 1.606-3.446l-.367-.225L8 9.586zM16 9.671V4.697l-5.803 3.546.338.208A4.5 4.5 0 0 1 12.5 8c1.414 0 2.675.652 3.5 1.671"
+                  />
+                  <path
+                    d="M15.834 12.244c0 1.168-.577 2.025-1.587 2.025-.503 0-1.002-.228-1.12-.648h-.043c-.118.416-.543.643-1.015.643-.77 0-1.259-.542-1.259-1.434v-.529c0-.844.481-1.4 1.26-1.4.585 0 .87.333.953.63h.03v-.568h.905v2.19c0 .272.18.42.411.42.315 0 .639-.415.639-1.39v-.118c0-1.277-.95-2.326-2.484-2.326h-.04c-1.582 0-2.64 1.067-2.64 2.724v.157c0 1.867 1.237 2.654 2.57 2.654h.045c.507 0 .935-.07 1.18-.18v.731c-.219.1-.643.175-1.237.175h-.044C10.438 16 9 14.82 9 12.646v-.214C9 10.36 10.421 9 12.485 9h.035c2.12 0 3.314 1.43 3.314 3.034zm-4.04.21v.227c0 .586.227.8.581.8.31 0 .564-.17.564-.743v-.367c0-.516-.275-.708-.572-.708-.346 0-.573.245-.573.791"
+                  />
+                </svg>
+                Email
+              </h2>
+              <p>Frontdesk@Wingateexotic.com</p>
+            </div>
+            <div>
+              <h2 class="textHead">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="30"
+                  height="30"
+                  fill="currentColor"
+                  class="bi bi-geo-alt-fill"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10m0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6"
+                  />
+                </svg>
+                Address
+              </h2>
+              <p>
+                Kilometer 10 University Of Ilorin Road,<br />
+                Before Ajanaku Bus Stop,<br />
+                Tanke Ilorin, Nigeria.
+              </p>
+            </div>
+            <div>
+              <h2 class="textHead">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="30"
+                  height="30"
+                  fill="currentColor"
+                  class="bi bi-phone-fill"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M3 2a2 2 0 0 1 2-2h6a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2zm6 11a1 1 0 1 0-2 0 1 1 0 0 0 2 0"
+                  />
+                </svg>
+                Tel:
+              </h2>
+              <p>+234 8098244472</p>
+              <p>+234 8098244473</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <h2 class="heading">GET IN <span>TOUCH</span></h2>
+    <p id="phrase">
+      Feedbacks, concerns, or special requests? We're here for you! Feel free to
+      reach out to us anytime – your comfort is our priority.
+    </p>
+    <section class="getInTouch">
+      <form>
+        <input
+          type="text"
+          id="firstname"
+          name="firstname"
+          placeholder="Firstname"
+          required
+        />
+        <input
+          type="text"
+          id="lastname"
+          name="lastname"
+          placeholder="Lastname"
+          required
+        />
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="Email"
+          required
+        />
+        <textarea
+          name="message"
+          id="message"
+          placeholder="Message"
+          required
+        ></textarea>
+        <button type="submit" onclick="sendMail()">SEND</button>
+      </form>
+    </section>
+    <footer>
+      <div class="footer">
+        <div class="footerSection">
+          <img src="./images/wingate logo.png" alt="wingate" />
+          <p id="brief">
+            Wingate Exotic, Ilorin's premier luxury hotel offering unparalleled
+            comfort and hospitality. Our tastefully appointed rooms and suites,
+            exquisite dining experiences, rejuvenating spa treatments, and
+            sophisticated event venues ensure a memorable stay for business and
+            leisure travelers alike. Come experience the epitome of elegance and
+            relaxation at Wingate Exotic Hotel, where every detail is
+            meticulously crafted to exceed your expectations.
+          </p>
+        </div>
+        <div class="footerSection">
+          <h2 class="">Quick Links</h2>
+          <ul>
+            <a href="./index.html"><li>Home</li></a>
+            <a href="./about.html"><li>About</li></a>
+            <a href="./facilities.html"><li>Facilities</li></a>
+            <a href="./accomodation.html"><li>Acomodation</li></a>
+            <a href="./room.html"><li>Room Price</li></a>
+            <a href="./contact.html"><li>Contact</li></a>
+            <a href="./booknow.html"><li>Book Now</li></a>
+          </ul>
+        </div>
+        <div class="footerSection">
+          <h2 class="">Follow Us</h2>
+          <ul>
+            <a href="#"><li>Facebook</li></a>
+            <a href="#"><li>Instagram</li></a>
+            <a href="#"><li>Twitter</li></a>
+          </ul>
+        </div>
+        <div class="footerSection">
+          <h2 class="">Subscribe To Our Newsletter</h2>
+          <p id="brief2">
+            Stay in the loop with all the latest updates, exclusive offers, and
+            exciting news by subscribing to our newsletter today!
+          </p>
+          <form name="submit-to-google-sheet">
+            <input type="email" name="Email" placeholder="Email" required />
+            <button type="submit">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="17"
+                height="17"
+                fill="currentColor"
+                class="bi bi-send-fill"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M15.964.686a.5.5 0 0 0-.65-.65L.767 5.855H.766l-.452.18a.5.5 0 0 0-.082.887l.41.26.001.002 4.995 3.178 3.178 4.995.002.002.26.41a.5.5 0 0 0 .886-.083zm-1.833 1.89L6.637 10.07l-.215-.338a.5.5 0 0 0-.154-.154l-.338-.215 7.494-7.494 1.178-.471z"
+                />
+              </svg>
+            </button>
+          </form>
+          <span id="msg"></span>
+        </div>
+      </div>
+      <div class="footerSection2">
+        <hr />
+        <p>Copyright©2024 Wingate Exotic</p>
+      </div>
+    </footer>
+    <script>
+      const scriptURL =
+        "https://script.google.com/macros/s/AKfycbyCf4caQxxYbR5vEMjyYfZTsTvJ3VWo76VBoyXDEf4NKeQ2XhkdkIqEERjXMgEvMvahOg/exec";
+      const form = document.forms["submit-to-google-sheet"];
+      const msg = document.getElementById("msg");
+
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        fetch(scriptURL, { method: "POST", body: new FormData(form) })
+          .then((response) => {
+            msg.innerHTML = "Thank You for Subscribing!";
+            setTimeout(() => {
+              msg.innerHTML = " ";
+            }, 5000);
+            form.reset();
+          })
+          .catch((error) => console.error("Error!", error.message));
+      });
+    </script>
+    <script src="app.js"></script>
+  </body>
+</html>

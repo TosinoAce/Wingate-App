@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wingate Exotic-Accomodation</title>
+    <link rel="stylesheet" href="app.css" />
+    <link
+      rel="shortcut icon"
+      type="image/png"
+      href="./Images/wingate logo.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Courgette&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      .accHero {
+        width: 100%;
+        min-height: 400px;
+        padding: 15px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background-image: url(./Images/doorway.jpg);
+        background-position: center;
+        background-size: cover;
+      }
+      .acc-container {
+        padding: 20px 30px 50px 30px;
+      }
+      .acc-container h2 {
+        font-family: "DM Serif Display", serif;
+        letter-spacing: 2px;
+        color: #012e49;
+      }
+      .acc-container p {
+        font-family: "poppins", serif;
+        font-size: 13px;
+        margin-top: 10px;
+      }
+      .a-Section img,
+      .a-Section2 img {
+        width: 550px;
+        height: 320px;
+      }
+      .accHero p {
+        font-family: "poppins", serif;
+        text-align: center;
+        margin-top: 15px;
+        max-width: 700px;
+        font-size: 18px;
+        font-weight: 500;
+        color: #ffffff;
+      }
+      .a-Section {
+        display: flex;
+        justify-content: flex-start;
+        position: relative;
+        padding: 40px 90px;
+      }
+      .a-Section2 {
+        display: flex;
+        justify-content: flex-end;
+        position: relative;
+        padding: 40px 90px;
+      }
+      .a-Section > div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        height: 260px;
+        position: absolute;
+        width: 600px;
+        text-align: center;
+        padding: 20px;
+        right: 80px;
+        top: 70px;
+        box-shadow: -8px -8px 15px rgba(255, 2255, 255, 0.1),
+          8px 8px 15px rgba(0, 0, 0, 0.1);
+        background-color: #ffffff;
+        cursor: pointer;
+        transition: 0.4s ease-in-out;
+      }
+      .a-Section2 > div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        height: 260px;
+        position: absolute;
+        width: 600px;
+        text-align: center;
+        padding: 20px;
+        left: 80px;
+        top: 70px;
+        box-shadow: -8px -8px 15px rgba(255, 2255, 255, 0.1),
+          8px 8px 15px rgba(0, 0, 0, 0.1);
+        background-color: #ffffff;
+        cursor: pointer;
+        transition: 0.4s ease-in-out;
+      }
+      .a-Section2 > div:hover,
+      .a-Section > div:hover {
+        outline: 1px solid goldenrod;
+        outline-offset: 1px;
+        scale: 1.06;
+      }
+      @media (max-width: 1024px) {
+        .a-Section2 > div {
+          position: relative;
+          width: 100%;
+          left: 0;
+          padding: 15px;
+          top: 0;
+        }
+        .a-Section > div {
+          width: 100%;
+          position: relative;
+          left: 0;
+          top: 0;
+          padding: 15px;
+        }
+        .a-Section {
+          display: block;
+          padding: 20px 0;
+        }
+        .a-Section2 {
+          display: block;
+          padding: 20px 0;
+        }
+        .acc-container {
+          width: 100%;
+          padding: 70px 15px 50px 15px;
+        }
+        .a-Section img,
+        .a-Section2 img {
+          width: 100%;
+          height: 100%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div id="logo">
+        <img src="./Images/wingate logo.png" alt="Wingate Hotel" />
+      </div>
+      <nav>
+        <ul class="navMenu">
+          <a href="./index.html">
+            <li class="navItem nav-link">Home</li>
+          </a>
+          <a href="./about.html">
+            <li class="navItem nav-link">About</li>
+          </a>
+          <a href="./facilities.html">
+            <li class="navItem nav-link">Facilities</li>
+          </a>
+          <a href="./accomodation.html">
+            <li class="navItem nav-link">Accomodation</li>
+          </a>
+          <a href="./room.html">
+            <li class="navItem nav-link">Room Price</li>
+          </a>
+          <a href="./contact.html">
+            <li class="navItem nav-link">Contact Us</li>
+          </a>
+          <a href="./booknow.html">
+            <li class="navItem nav-link" id="mobile-booknow">Book Now</li>
+          </a>
+        </ul>
+        <div id="bookNow">
+          <a href="./booknow.html"
+            ><button class="nav-link"><span>Book Now</span></button></a
+          >
+        </div>
+      </nav>
+      <div class="hamburger">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+    </header>
+    <section class="accHero">
+      <h2 class="heading">Accomodation</h2>
+      <p>
+        Bold colours adorn the rooms at Wingate Exotic, allowing you to relax in
+        African style. Enjoy modern furniture and wooden finishes in this
+        polished hotel. Each room is designed with a truly African feel and warm
+        colours to give guests a fresh and new feel as they travel to Wingate
+        Exotic for business or leisure. All rooms offer king sized beds offering
+        complete relaxation in these spacious rooms.
+      </p>
+    </section>
+    <section class="acc-container">
+      <div class="a-Section">
+        <img src="./Images/superior.jpg" alt="standard" />
+        <div>
+          <h2>STANDARD ROOM</h2>
+          <p>
+            This comfortable room decorated bold colours. Our standard rooms are
+            equipped with walk in shower and bathtub. Each room is with central
+            air conditioned and has a flat-screen LED TV with 30 satellite
+            channels, cosy king size bed, 24 hours WIFI and spacious wardrobe.
+          </p>
+        </div>
+      </div>
+      <div class="a-Section2">
+        <img src="./Images/hotels.jpg" alt="superior" />
+        <div>
+          <h2>SUPERIOR ROOM</h2>
+          <p>
+            The Deluxe room is finely decorated for your luxurious stay and
+            contains all basic amenities such as Colour LED TV with 30 Satellite
+            channels, cosy king size bed with quality linen, 2 single occasional
+            chairs, dressing mirror, Mini Fridge and it exudes a warm elegance.
+          </p>
+        </div>
+      </div>
+      <div class="a-Section">
+        <img src="./Images/executive.jpg" alt="executive" />
+        <div>
+          <h2>EXCUTIVE ROOM</h2>
+          <p>
+            This a cosy furnished space offering a comfortable stay. Each
+            executive suite is aesthetically designed, well ventilated and has a
+            fully central air-conditioned bedroom, bathroom, a living area, best
+            suited for business travellers and tourists.
+          </p>
+        </div>
+      </div>
+      <div class="a-Section2">
+        <img src="./Images/intro 2.jpg" alt="queenabik" />
+        <div>
+          <h2>QUEENABIK ROOM</h2>
+          <p>
+            These stately with posh and bold colours. Our QUEENABIK ROOM is an
+            intimate and charming atmosphere, high quality Wi-Fi, facility, Hi
+            Definition LED TV with 30 Satellite channels, spacious bathroom and
+            guest toilet.
+          </p>
+        </div>
+      </div>
+      <div class="a-Section">
+        <img src="./Images/queen.jpg" alt="queen" />
+        <div>
+          <h2>QUEEN ROOM</h2>
+          <p>
+            The QUEEN room have a Pool view which is decorated for your
+            luxurious stay and contains all basic amenities such as Colour LED
+            TV with 30 Satellite channels, cosy king size bed with quality
+            linen, 2 single occasional chairs, dressing mirror, Mini Fridge and
+            a Safe box.
+          </p>
+        </div>
+      </div>
+      <div class="a-Section2">
+        <img src="./Images/yemkol.jpg" alt="Yemkol" />
+        <div>
+          <h2>YEMKOL SUITE</h2>
+          <p>
+            A spacious bedroom and living room. Furnishings including a
+            comfortable sofa and a writing desk with internet access capability
+            complete this business environment. In addition, the bathroom is
+            equipped with a bathtub a shower booth to create a more relaxing
+            bath time.
+          </p>
+        </div>
+      </div>
+      <div class="a-Section">
+        <img src="./Images/TK suite.jpg" alt="Tk suites" />
+        <div>
+          <h2>TK SUITE</h2>
+          <p>
+            These stately with posh and bold colours. TK suite is an intimate
+            and charming atmosphere, high quality, Wi-Fi, facility, Hi
+            Definition LED TV with 30 Satellite channels, spacious bathroom.
+          </p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="footer">
+        <div class="footerSection">
+          <img src="./images/wingate logo.png" alt="wingate" />
+          <p id="brief">
+            Wingate Exotic, Ilorin's premier luxury hotel offering unparalleled
+            comfort and hospitality. Our tastefully appointed rooms and suites,
+            exquisite dining experiences, rejuvenating spa treatments, and
+            sophisticated event venues ensure a memorable stay for business and
+            leisure travelers alike. Come experience the epitome of elegance and
+            relaxation at Wingate Exotic Hotel, where every detail is
+            meticulously crafted to exceed your expectations.
+          </p>
+        </div>
+        <div class="footerSection">
+          <h2 class="">Quick Links</h2>
+          <ul>
+            <a href="./index.html"><li>Home</li></a>
+            <a href="./about.html"><li>About</li></a>
+            <a href="./facilities.html"><li>Facilities</li></a>
+            <a href="./accomodation.html"><li>Acomodation</li></a>
+            <a href="./room.html"><li>Room Price</li></a>
+            <a href="./contact.html"><li>Contact</li></a>
+            <a href="./booknow.html"><li>Book Now</li></a>
+          </ul>
+        </div>
+        <div class="footerSection">
+          <h2 class="">Follow Us</h2>
+          <ul>
+            <a href="#"><li>Facebook</li></a>
+            <a href="#"><li>Instagram</li></a>
+            <a href="#"><li>Twitter</li></a>
+          </ul>
+        </div>
+        <div class="footerSection">
+          <h2 class="">Subscribe To Our Newsletter</h2>
+          <p id="brief2">
+            Stay in the loop with all the latest updates, exclusive offers, and
+            exciting news by subscribing to our newsletter today!
+          </p>
+          <form name="submit-to-google-sheet">
+            <input type="email" name="Email" placeholder="Email" required />
+            <button type="submit">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="17"
+                height="17"
+                fill="currentColor"
+                class="bi bi-send-fill"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M15.964.686a.5.5 0 0 0-.65-.65L.767 5.855H.766l-.452.18a.5.5 0 0 0-.082.887l.41.26.001.002 4.995 3.178 3.178 4.995.002.002.26.41a.5.5 0 0 0 .886-.083zm-1.833 1.89L6.637 10.07l-.215-.338a.5.5 0 0 0-.154-.154l-.338-.215 7.494-7.494 1.178-.471z"
+                />
+              </svg>
+            </button>
+          </form>
+          <span id="msg"></span>
+        </div>
+      </div>
+      <div class="footerSection2">
+        <hr />
+        <p>Copyright©2024 Wingate Exotic</p>
+      </div>
+    </footer>
+    <script>
+      const scriptURL =
+        "https://script.google.com/macros/s/AKfycbyCf4caQxxYbR5vEMjyYfZTsTvJ3VWo76VBoyXDEf4NKeQ2XhkdkIqEERjXMgEvMvahOg/exec";
+      const form = document.forms["submit-to-google-sheet"];
+      const msg = document.getElementById("msg");
+
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        fetch(scriptURL, { method: "POST", body: new FormData(form) })
+          .then((response) => {
+            msg.innerHTML = "Thank You for Subscribing!";
+            setTimeout(() => {
+              msg.innerHTML = " ";
+            }, 5000);
+            form.reset();
+          })
+          .catch((error) => console.error("Error!", error.message));
+      });
+    </script>
+    <script src="app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wingate Exotic-Faciities</title>
+    <link rel="stylesheet" href="app.css" />
+    <link
+      rel="shortcut icon"
+      type="image/png"
+      href="./Images/wingate logo.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Courgette&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      .facilitySection {
+        padding: 70px 30px 50px 30px;
+      }
+      .facilitySection img {
+        width: 550px;
+        height: 320px;
+      }
+      .facilitySection h2 {
+        font-family: "DM Serif Display", serif;
+        letter-spacing: 2px;
+        color: #012e49;
+      }
+      .facilitySection p {
+        font-family: "poppins", serif;
+        font-size: 13px;
+        margin-top: 10px;
+      }
+      .f-Section {
+        display: flex;
+        justify-content: flex-start;
+        position: relative;
+        padding: 40px 90px;
+      }
+      .f-Section2 {
+        display: flex;
+        justify-content: flex-end;
+        position: relative;
+        padding: 40px 90px;
+      }
+      .f-Section > div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        height: 260px;
+        position: absolute;
+        width: 600px;
+        /* background-color: white; */
+        text-align: center;
+        padding: 20px;
+        right: 80px;
+        top: 70px;
+        box-shadow: -8px -8px 15px rgba(255, 2255, 255, 0.1),
+          8px 8px 15px rgba(0, 0, 0, 0.1);
+        background-color: #ffffff;
+        cursor: pointer;
+        transition: 0.4s ease-in-out;
+      }
+      .f-Section2 > div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        height: 260px;
+        position: absolute;
+        width: 600px;
+        /* background-color: white; */
+        text-align: center;
+        padding: 20px;
+        left: 80px;
+        top: 70px;
+        box-shadow: -8px -8px 15px rgba(255, 2255, 255, 0.1),
+          8px 8px 15px rgba(0, 0, 0, 0.1);
+        background-color: #ffffff;
+        cursor: pointer;
+        transition: 0.4s ease-in-out;
+      }
+      .f-Section2 > div:hover,
+      .f-Section > div:hover {
+        outline: 1px solid goldenrod;
+        outline-offset: 1px;
+        scale: 1.06;
+      }
+      @media (max-width: 1024px) {
+        .f-Section2 > div {
+          position: relative;
+          width: 100%;
+          left: 0;
+          padding: 15px;
+          top: 0;
+        }
+        .f-Section > div {
+          width: 100%;
+          position: relative;
+          left: 0;
+          top: 0;
+          padding: 15px;
+        }
+        .f-Section{
+          display: block;
+          padding: 20px 0;
+        }
+        .f-Section2{
+          display: block;
+          padding: 20px 0;
+        }
+      .facilitySection {
+        width: 100%;
+        padding: 70px 15px 50px 15px;
+      }
+      .facilitySection img {
+        width: 100%;
+        height: 100%;
+      }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div id="logo">
+        <img src="./Images/wingate logo.png" alt="Wingate Hotel" />
+      </div>
+      <nav>
+        <ul class="navMenu">
+          <a href="./index.html">
+            <li class="navItem nav-link">Home</li>
+          </a>
+          <a href="./about.html">
+            <li class="navItem nav-link">About</li>
+          </a>
+          <a href="./facilities.html">
+            <li class="navItem nav-link">Facilities</li>
+          </a>
+          <a href="./accomodation.html">
+            <li class="navItem nav-link">Accomodation</li>
+          </a>
+          <a href="./room.html">
+            <li class="navItem nav-link">Room Price</li>
+          </a>
+          <a href="./contact.html">
+            <li class="navItem nav-link">Contact Us</li>
+          </a>
+          <a href="./booknow.html">
+            <li class="navItem nav-link" id="mobile-booknow">Book Now</li>
+          </a>
+        </ul>
+        <div id="bookNow">
+          <a href="./booknow.html"
+            ><button class="nav-link"><span>Book Now</span></button></a
+          >
+        </div>
+      </nav>
+      <div class="hamburger">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+    </header>
+    <section class="facilitySection">
+      <h2 class="heading">Our <span>Facilities</span></h2>
+      <div class="f-Section">
+        <img src="./Images/hall.jpg" alt="tarako" />
+        <div>
+          <h2>TARAKO HALL</h2>
+          <p>
+            Wingate Hotel is equipped to ensure that your meeting, conference,
+            corporate event or product launch is a success. The Auditorium has a
+            large floor space and a height of 6.5 meters, offering choices of
+            daily conference packages tailor-made to suite your needs.
+          </p>
+        </div>
+      </div>
+      <div class="f-Section2">
+        <img src="./Images/506602692.jpg" alt="queenabik" />
+        <div>
+          <h2>QUEENABIK HALL</h2>
+          <p>
+            QueenAbik Hall offers a smaller auditorium that is perfect for
+            smaller group of attendees of conferences and seminars. The event
+            hall may be smaller, but uncompromised in quality and equipment. As
+            it is with bigger Tarako Hall, it is well equipped with public
+            address system and projector screen to aid your presentations.
+            Polite and respectful waiters are also available at your beacon call
+            to tend to your needs. In addition to QueenAbik Hall, we do have
+            others various sizes event halls to meet your needs.
+          </p>
+        </div>
+      </div>
+      <div class="f-Section">
+        <img src="./Images/bar.jpg" alt="bar" />
+        <div>
+          <h2>QUEENABIK BAR</h2>
+          <p>
+            Queenabik Bar/restaurant offers a variety of delicious food and
+            drinks. Enjoy dining from the breakfast buffet or a la carte menu
+            for lunch or dinner in our restaurant. At the end of a busy day
+            enjoy your favourite cocktail or Mocktail or a drink of your choice
+            at our bar located in the restaurant.
+          </p>
+        </div>
+      </div>
+      <div class="f-Section2">
+        <img src="./Images/pool3.jpg" alt="pool" />
+        <div>
+          <h2>SWIMMING POOL</h2>
+          <p>
+            After a hard day’s work, guests can unwind in the swimming pool or
+            book a pampering at the health Spa and for the health conscious
+          </p>
+        </div>
+      </div>
+      <div class="f-Section">
+        <img src="./Images/airport shuttle.png" alt="airport" />
+        <div>
+          <h2>AIRPORT SHUTTLE</h2>
+          <p>
+            The hotel offers friendly service, an efficient shuttle service
+            (surcharge), car rental facilities, concierge, 24-hour reception and
+            armed police escort to the airport. has context menu
+          </p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="footer">
+        <div class="footerSection">
+          <img src="./images/wingate logo.png" alt="wingate" />
+          <p id="brief">
+            Wingate Exotic, Ilorin's premier luxury hotel offering unparalleled
+            comfort and hospitality. Our tastefully appointed rooms and suites,
+            exquisite dining experiences, rejuvenating spa treatments, and
+            sophisticated event venues ensure a memorable stay for business and
+            leisure travelers alike. Come experience the epitome of elegance and
+            relaxation at Wingate Exotic Hotel, where every detail is
+            meticulously crafted to exceed your expectations.
+          </p>
+        </div>
+        <div class="footerSection">
+          <h2 class="">Quick Links</h2>
+          <ul>
+            <a href="./index.html"><li>Home</li></a>
+            <a href="./about.html"><li>About</li></a>
+            <a href="./facilities.html"><li>Facilities</li></a>
+            <a href="./accomodation.html"><li>Acomodation</li></a>
+            <a href="./room.html"><li>Room Price</li></a>
+            <a href="./contact.html"><li>Contact</li></a>
+            <a href="./booknow.html"><li>Book Now</li></a>
+          </ul>
+        </div>
+        <div class="footerSection">
+          <h2 class="">Follow Us</h2>
+          <ul>
+            <a href="#"><li>Facebook</li></a>
+            <a href="#"><li>Instagram</li></a>
+            <a href="#"><li>Twitter</li></a>
+          </ul>
+        </div>
+        <div class="footerSection">
+          <h2 class="">Subscribe To Our Newsletter</h2>
+          <p id="brief2">
+            Stay in the loop with all the latest updates, exclusive offers, and
+            exciting news by subscribing to our newsletter today!
+          </p>
+          <form name="submit-to-google-sheet">
+            <input type="email" name="Email" placeholder="Email" required />
+            <button type="submit">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="17"
+                height="17"
+                fill="currentColor"
+                class="bi bi-send-fill"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M15.964.686a.5.5 0 0 0-.65-.65L.767 5.855H.766l-.452.18a.5.5 0 0 0-.082.887l.41.26.001.002 4.995 3.178 3.178 4.995.002.002.26.41a.5.5 0 0 0 .886-.083zm-1.833 1.89L6.637 10.07l-.215-.338a.5.5 0 0 0-.154-.154l-.338-.215 7.494-7.494 1.178-.471z"
+                />
+              </svg>
+            </button>
+          </form>
+          <span id="msg"></span>
+        </div>
+      </div>
+      <div class="footerSection2">
+        <hr />
+        <p>Copyright©2024 Wingate Exotic</p>
+      </div>
+    </footer>
+    <script>
+      const scriptURL =
+        "https://script.google.com/macros/s/AKfycbyCf4caQxxYbR5vEMjyYfZTsTvJ3VWo76VBoyXDEf4NKeQ2XhkdkIqEERjXMgEvMvahOg/exec";
+      const form = document.forms["submit-to-google-sheet"];
+      const msg = document.getElementById("msg");
+
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        fetch(scriptURL, { method: "POST", body: new FormData(form) })
+          .then((response) => {
+            msg.innerHTML = "Thank You for Subscribing!";
+            setTimeout(() => {
+              msg.innerHTML = " ";
+            }, 5000);
+            form.reset();
+          })
+          .catch((error) => console.error("Error!", error.message));
+      });
+    </script>
+    <script src="app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wingate Exotic-Room Prices</title>
+    <link rel="stylesheet" href="app.css" />
+    <link
+      rel="shortcut icon"
+      type="image/png"
+      href="./Images/wingate logo.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Courgette&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      .roomHero {
+        width: 100%;
+        min-height: 400px;
+        padding: 15px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background-image: url(./Images/506602959.jpg);
+        background-position: center;
+        background-size: cover;
+      }
+      .roomHero p {
+        font-family: "poppins", serif;
+        text-align: center;
+        margin-top: 15px;
+        max-width: 700px;
+        font-size: 18px;
+        font-weight: 500;
+        color: #ffffff;
+      }
+      .roomCard{
+        min-width: 300;
+        max-width: 400px;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid goldenrod;
+        box-shadow: -8px -8px 15px rgba(255, 2255, 255, 0.1),
+          8px 8px 15px rgba(0, 0, 0, 0.1);
+      }
+      .roomCard img{
+        width: 100%;
+        margin-bottom: 30px;
+      }
+      .roomCard h3{
+        font-family: "DM Serif Display", serif;
+        color: #012e49;
+        margin-bottom: 10px;
+      }
+      .detail{
+        color: #012e49;
+        font-family: "poppins", serif;
+        font-weight: 300;
+        font-size: 14px;
+      }
+      .pricing{
+        color: goldenrod;
+        font-family: "DM Serif Display", serif;
+        font-weight: 600;
+        font-size: 20px;
+      }
+      .roomContainer{
+        padding: 80px 30px 50px 30px;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div id="logo">
+        <img src="./Images/wingate logo.png" alt="Wingate Hotel" />
+      </div>
+      <nav>
+        <ul class="navMenu">
+          <a href="./index.html">
+            <li class="navItem nav-link">Home</li>
+          </a>
+          <a href="./about.html">
+            <li class="navItem nav-link">About</li>
+          </a>
+          <a href="./facilities.html">
+            <li class="navItem nav-link">Facilities</li>
+          </a>
+          <a href="./accomodation.html">
+            <li class="navItem nav-link">Accomodation</li>
+          </a>
+          <a href="./room.html">
+            <li class="navItem nav-link">Room Price</li>
+          </a>
+          <a href="./contact.html">
+            <li class="navItem nav-link">Contact Us</li>
+          </a>
+          <a href="./booknow.html">
+            <li class="navItem nav-link" id="mobile-booknow">Book Now</li>
+          </a>
+        </ul>
+        <div id="bookNow">
+          <a href="./booknow.html"><button class="nav-link"><span>Book Now</span></button></a>
+        </div>
+      </nav>
+      <div class="hamburger">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+    </header>
+    <section class="roomHero">
+      <h2 class="heading">Room Prices</h2>
+      <p>
+        Bold colours adorn the rooms at Wingate Exotic, allowing you to relax in
+        African style. Enjoy modern furniture and wooden finishes in this
+        polished hotel. Each room is designed with a truly African feel and warm
+        colours to give guests a fresh and new feel as they travel to Wingate
+        Exotic for business or leisure. All rooms offer king sized beds offering
+        complete relaxation in these spacious rooms.
+      </p>
+    </section>
+    <section class="roomContainer">
+      <div class="roomCard">
+        <img src="./Images/superior.jpg" alt="">
+        <h3>Standard Room</h3>
+        <span class="pricing">₦30,000 per Night</span>
+        <span class="detail">Breakfast for One</span>
+      </div>
+      <div class="roomCard">
+        <img src="./Images/intro 2.jpg" alt="">
+        <h3>Superior Room</h3>
+        <span class="pricing">₦35,000 per Night</span>
+        <span class="detail">Breakfast for One</span>
+      </div>
+      <div class="roomCard">
+        <img src="./Images/executive.jpg" alt="">
+        <h3>Executive Room</h3>
+        <span class="pricing">₦40,000 per Night</span>
+        <span class="detail">Breakfast for One</span>
+      </div>
+      <div class="roomCard">
+        <img src="./Images/hotels.jpg" alt="">
+        <h3>Queenabik Room</h3>
+        <span class="pricing">₦45,000 per Night</span>
+        <span class="detail">Breakfast for One</span>
+      </div>
+      <div class="roomCard">
+        <img src="./Images/queen.jpg" alt="">
+        <h3>Queen Room</h3>
+        <span class="pricing">₦45,000 per Night</span>
+        <span class="detail">Breakfast for One</span>
+      </div>
+      <div class="roomCard">
+        <img src="./Images/yemkol.jpg" alt="">
+        <h3>Yemkol Suite</h3>
+        <span class="pricing">₦55,000 per Night</span>
+        <span class="detail">Breakfast for Two</span>
+      </div>
+      <div class="roomCard">
+        <img src="./Images/TK suite.jpg" alt="">
+        <h3>TK Suite</h3>
+        <span class="pricing">₦65,000 per Night</span>
+        <span class="detail">Breakfast for Two</span>
+      </div>
+    </section>
+    <footer>
+      <div class="footer">
+        <div class="footerSection">
+          <img src="./images/wingate logo.png" alt="wingate" />
+          <p id="brief">
+            Wingate Exotic, Ilorin's premier luxury hotel offering unparalleled
+            comfort and hospitality. Our tastefully appointed rooms and suites,
+            exquisite dining experiences, rejuvenating spa treatments, and
+            sophisticated event venues ensure a memorable stay for business and
+            leisure travelers alike. Come experience the epitome of elegance and
+            relaxation at Wingate Exotic Hotel, where every detail is
+            meticulously crafted to exceed your expectations.
+          </p>
+        </div>
+        <div class="footerSection">
+          <h2 class="">Quick Links</h2>
+          <ul>
+            <a href="./index.html"><li>Home</li></a>
+            <a href="./about.html"><li>About</li></a>
+            <a href="./facilities.html"><li>Facilities</li></a>
+            <a href="./accomodation.html"><li>Acomodation</li></a>
+            <a href="./room.html"><li>Room Price</li></a>
+            <a href="./contact.html"><li>Contact</li></a>
+            <a href="./booknow.html"><li>Book Now</li></a>
+          </ul>
+        </div>
+        <div class="footerSection">
+          <h2 class="">Follow Us</h2>
+          <ul>
+            <a href="#"><li>Facebook</li></a>
+            <a href="#"><li>Instagram</li></a>
+            <a href="#"><li>Twitter</li></a>
+          </ul>
+        </div>
+        <div class="footerSection">
+          <h2 class="">Subscribe To Our Newsletter</h2>
+          <p id="brief2">
+            Stay in the loop with all the latest updates, exclusive offers, and
+            exciting news by subscribing to our newsletter today!
+          </p>
+          <form name="submit-to-google-sheet">
+            <input type="email" name="Email" placeholder="Email" required />
+            <button type="submit">
+              <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" fill="currentColor" class="bi bi-send-fill" viewBox="0 0 16 16">
+                <path d="M15.964.686a.5.5 0 0 0-.65-.65L.767 5.855H.766l-.452.18a.5.5 0 0 0-.082.887l.41.26.001.002 4.995 3.178 3.178 4.995.002.002.26.41a.5.5 0 0 0 .886-.083zm-1.833 1.89L6.637 10.07l-.215-.338a.5.5 0 0 0-.154-.154l-.338-.215 7.494-7.494 1.178-.471z"/>
+              </svg>
+            </button>
+          </form>
+          <span id="msg"></span>
+        </div>
+      </div>
+      <div class="footerSection2">
+        <hr />
+        <p>Copyright©2024 Wingate Exotic</p>
+      </div>
+    </footer>
+    <script>
+      const scriptURL = 'https://script.google.com/macros/s/AKfycbyCf4caQxxYbR5vEMjyYfZTsTvJ3VWo76VBoyXDEf4NKeQ2XhkdkIqEERjXMgEvMvahOg/exec';
+      const form = document.forms['submit-to-google-sheet'];
+      const msg = document.getElementById("msg");
+    
+      form.addEventListener('submit', e => {
+        e.preventDefault()
+        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+          .then(response => {
+            msg.innerHTML = "Thank You for Subscribing!"
+            setTimeout(()=>{
+              msg.innerHTML = " "
+            }, 5000);
+            form.reset();
+          })
+          .catch(error => console.error('Error!', error.message))
+      })
+    </script>
+    <script src="app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wingate Exotic-About</title>
+    <link rel="stylesheet" href="app.css" />
+    <link
+      rel="shortcut icon"
+      type="image/png"
+      href="./Images/wingate logo.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Courgette&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      .aboutHero {
+        position: relative;
+        padding: 70px 20px 20px 20px;
+        margin-bottom: 350px;
+      }
+      .ChangingImageContainer {
+        width: 100%;
+        height: 500px;
+        animation: changeImage 50s infinite;
+        background-position: center;
+        background-size: cover;
+        object-fit: fill;
+        border-radius: 16px;
+      }
+      .aboutContainer {
+        position: absolute;
+        width: 80%;
+        left: 10%;
+        bottom: -50%;
+        background-color: #ffffff;
+        padding: 0 50px 30px 50px;
+        border-radius: 16px;
+        box-shadow: -8px -8px 15px rgba(255, 2255, 255, 0.1),
+          8px 8px 15px rgba(0, 0, 0, 0.1);
+      }
+      .aboutContainer p {
+        font-family: "poppins", serif;
+        text-align: center;
+        margin-top: 30px;
+      }
+      .culture {
+        padding: 0px 40px 10px 40px;
+        height: 550px;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        position: relative;
+      }
+      .culture img {
+        position: absolute;
+        left: 50px;
+        width: 600px;
+      }
+      .cultureText {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 90%;
+        width: 600px;
+        padding: 30px;
+        font-family: "poppins", serif;
+        line-height: 140%;
+        text-align: center;
+        /* border: 1px solid goldenrod; */
+        border-radius: 8px;
+        box-shadow: -8px -8px 15px rgba(255, 2255, 255, 0.9),
+          8px 8px 15px rgba(0, 0, 0, 0.2);
+      }
+      @keyframes changeImage {
+        0%,
+        100% {
+          background-image: url(./images/pool.jpg);
+        }
+        33.33% {
+          background-image: url(./images/pool2.jpg);
+        }
+        66.66% {
+          background-image: url(./images/intro\ 1.jpg);
+        }
+      }
+      @media (max-width: 1024px) {
+        .aboutContainer {
+          position: relative;
+          width: 100%;
+          left: 0;
+          bottom: 0;
+          background-color: #ffffff;
+          padding: 0 0px 0 0px;
+          border-radius: 0px;
+          box-shadow: 0px 0px 0px rgba(255, 2255, 255, 0),
+            0px 0px 0px rgba(0, 0, 0, 0);
+        }
+        .ChangingImageContainer {
+          width: 100%;
+          height: 200px;
+          animation: changeImage 50s infinite;
+          background-position: center;
+          background-size: cover;
+          object-fit: fill;
+          border-radius: 16px;
+        }
+        .aboutHero {
+          margin-bottom: 30px;
+        }
+        .culture {
+          padding: 0px 20px 10px 20px;
+          min-height: 550px;
+          display: flex;
+          justify-content: flex-end;
+          align-items: center;
+          position: relative;
+          flex-direction: column;
+        }
+        .culture img {
+          position: relative;
+          left: 0;
+          width: 300px;
+          margin-top: 20px;
+        }
+        .cultureText {
+          height: 90%;
+          width: 100%;
+          padding: 0px;
+          border-radius: 0px;
+          box-shadow: 0px 0px 0px rgba(255, 2255, 255, 0),
+            0px 0px 0px rgba(0, 0, 0, 0);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div id="logo">
+        <img src="./Images/wingate logo.png" alt="Wingate Hotel" />
+      </div>
+      <nav>
+        <ul class="navMenu">
+          <a href="./index.html">
+            <li class="navItem nav-link">Home</li>
+          </a>
+          <a href="./about.html">
+            <li class="navItem nav-link">About</li>
+          </a>
+          <a href="./facilities.html">
+            <li class="navItem nav-link">Facilities</li>
+          </a>
+          <a href="./accomodation.html">
+            <li class="navItem nav-link">Accomodation</li>
+          </a>
+          <a href="./room.html">
+            <li class="navItem nav-link">Room Price</li>
+          </a>
+          <a href="./contact.html">
+            <li class="navItem nav-link">Contact Us</li>
+          </a>
+          <a href="./booknow.html">
+            <li class="navItem nav-link" id="mobile-booknow">Book Now</li>
+          </a>
+        </ul>
+        <div id="bookNow">
+          <a href="./booknow.html"
+            ><button class="nav-link"><span>Book Now</span></button></a
+          >
+        </div>
+      </nav>
+      <div class="hamburger">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+    </header>
+    <section class="aboutHero">
+      <div class="ChangingImageContainer"></div>
+      <div class="aboutContainer">
+        <h2 class="heading">About Us</h2>
+        <p>
+          Wingate Exotic is an hotel in a class of its own, compared to our
+          competitors in Ilorin - we are at a uniquely a different level. While
+          Wingate Exotic might be seen as relatively small in size, She is
+          actually very big in quality. She brought with her into Ilorin,
+          foreign good qualities in service and in its delivery, that is not
+          normally found in Ilorin environs - hence, Exotic!. She was born out
+          of desire to deliver excellent service to our guests, therefore our
+          focus is quality, giving you an experience of cozy memory that lasts.
+          We have positioned ourselves for Excellent Service Delivery, through
+          high standards maintenance, world class technologies & computerized
+          systems, cleanliness, mouth-watering offers and integrity. By the same
+          token, our staff are trained to maintain professional appearance at
+          all times, timely response to your orders and high level of respect.
+          We are strategically located at the heart of Kwara, the harmony state.
+          There are innumerable streets and roads that pave the city of Ilorin
+          and some of these street/roads are famous around the country. The
+          captivating atmosphere of Ilorin' streets, particularly Tunde Idiagbon
+          way (University of Ilorin Road), will give you a wonderful explorative
+          feeling. Wingate Hotel is situated on this very Road along University
+          of Ilorin Road, Ilorin which is the capital of Kwara State in the
+          North Central part of the country and is famous with many attractions
+          for the guest to enjoy, both business and leisure travelers. A
+          high-security presence ensures a peaceful atmosphere, with the
+          Unilorin Botanical Garden which houses a number of animals,
+          restaurants, cafes, clubs, lounges and bars in close vicinity. The
+          Esie Museum, which was the first museum in Nigeria– Built in 1945, the
+          museum once housed a thousand tombstone images representing human
+          beings and is famed to have the largest collection of soapstone images
+          in the world is located a few minutes away. Wingate Exotic is
+          strategically located to these mind-blowing attractions in order to
+          make your visit enjoyable and the cosy memory you leave with lasts.
+        </p>
+      </div>
+    </section>
+    <h2 class="heading">People & Culture</h2>
+    <section class="culture">
+      <img src="./Images/culture.png" alt="ilorin culture" />
+      <div class="cultureText">
+        <p>
+          Ilorin is a cosmopolitan city, welcoming to different people and
+          cultures. Although its indigenous ethnic groups are Fulanis, Nupes,
+          Barubas, and Yoruba, the city and the entire city has become home to
+          many peoples, and Wingate Exotic derived its values of welcoming and
+          accommodating all peoples from the city's heritage. The state is
+          hugely involved in agriculture and the principal crops are Cotton,
+          Cocoa, Coffee, Colanut, Tobacco, Beanseed, and Palm produce - another
+          reason to visit Ilorin and stay with us in order to explore the
+          limitless opportunities these provide.
+        </p>
+      </div>
+    </section>
+    <footer>
+      <div class="footer">
+        <div class="footerSection">
+          <img src="./images/wingate logo.png" alt="wingate" />
+          <p id="brief">
+            Wingate Exotic, Ilorin's premier luxury hotel offering unparalleled
+            comfort and hospitality. Our tastefully appointed rooms and suites,
+            exquisite dining experiences, rejuvenating spa treatments, and
+            sophisticated event venues ensure a memorable stay for business and
+            leisure travelers alike. Come experience the epitome of elegance and
+            relaxation at Wingate Exotic Hotel, where every detail is
+            meticulously crafted to exceed your expectations.
+          </p>
+        </div>
+        <div class="footerSection">
+          <h2 class="">Quick Links</h2>
+          <ul>
+            <a href="./index.html"><li>Home</li></a>
+            <a href="./about.html"><li>About</li></a>
+            <a href="./facilities.html"><li>Facilities</li></a>
+            <a href="./accomodation.html"><li>Acomodation</li></a>
+            <a href="./room.html"><li>Room Price</li></a>
+            <a href="./contact.html"><li>Contact</li></a>
+            <a href="./booknow.html"><li>Book Now</li></a>
+          </ul>
+        </div>
+        <div class="footerSection">
+          <h2 class="">Follow Us</h2>
+          <ul>
+            <a href="#"><li>Facebook</li></a>
+            <a href="#"><li>Instagram</li></a>
+            <a href="#"><li>Twitter</li></a>
+          </ul>
+        </div>
+        <div class="footerSection">
+          <h2 class="">Subscribe To Our Newsletter</h2>
+          <p id="brief2">
+            Stay in the loop with all the latest updates, exclusive offers, and
+            exciting news by subscribing to our newsletter today!
+          </p>
+          <form name="submit-to-google-sheet">
+            <input type="email" name="Email" placeholder="Email" required />
+            <button type="submit">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="17"
+                height="17"
+                fill="currentColor"
+                class="bi bi-send-fill"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M15.964.686a.5.5 0 0 0-.65-.65L.767 5.855H.766l-.452.18a.5.5 0 0 0-.082.887l.41.26.001.002 4.995 3.178 3.178 4.995.002.002.26.41a.5.5 0 0 0 .886-.083zm-1.833 1.89L6.637 10.07l-.215-.338a.5.5 0 0 0-.154-.154l-.338-.215 7.494-7.494 1.178-.471z"
+                />
+              </svg>
+            </button>
+          </form>
+          <span id="msg"></span>
+        </div>
+      </div>
+      <div class="footerSection2">
+        <hr />
+        <p>Copyright©2024 Wingate Exotic</p>
+      </div>
+    </footer>
+    <script>
+      const scriptURL =
+        "https://script.google.com/macros/s/AKfycbyCf4caQxxYbR5vEMjyYfZTsTvJ3VWo76VBoyXDEf4NKeQ2XhkdkIqEERjXMgEvMvahOg/exec";
+      const form = document.forms["submit-to-google-sheet"];
+      const msg = document.getElementById("msg");
+
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        fetch(scriptURL, { method: "POST", body: new FormData(form) })
+          .then((response) => {
+            msg.innerHTML = "Thank You for Subscribing!";
+            setTimeout(() => {
+              msg.innerHTML = " ";
+            }, 5000);
+            form.reset();
+          })
+          .catch((error) => console.error("Error!", error.message));
+      });
+    </script>
+    <script src="app.js"></script>
+  </body>
+</html>
