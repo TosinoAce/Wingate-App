@@ -26,3 +26,6 @@ make preparations to begin form testing over a secured http connection.
 later today: deploy the new website using onrender for secure http.
 and test if the form works over the secured connection. if this works i then receate for the reservation form before then moving
 to enhancing the form auto response in order to give specific tailored response to reservations made.
+
+subscribe to newsletter form works perfectly.
+need to work on the contact us form..... it no longer works
