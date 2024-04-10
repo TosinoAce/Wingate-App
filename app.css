@@ -424,8 +424,10 @@ footer hr {
   z-index: 12;
   letter-spacing: 3px;
 }
-.footerSection img {
-  width: 100px;
+.footerLogo{
+  font-family: "DM Serif Display", serif;
+  font-size: 25px;
+  color: goldenrod;
 }
 .footerSection ul {
   margin-top: 10px;
