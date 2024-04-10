@@ -50,7 +50,7 @@
         font-weight: 500;
         color: #ffffff;
       }
-      .roomCard{
+      .roomCard {
         min-width: 300;
         max-width: 400px;
         padding: 10px;
@@ -62,33 +62,37 @@
         box-shadow: -8px -8px 15px rgba(255, 2255, 255, 0.1),
           8px 8px 15px rgba(0, 0, 0, 0.1);
       }
-      .roomCard img{
+      .roomCard img {
         width: 100%;
         margin-bottom: 30px;
       }
-      .roomCard h3{
+      .roomCard h3 {
         font-family: "DM Serif Display", serif;
         color: #012e49;
         margin-bottom: 10px;
       }
-      .detail{
+      .detail {
         color: #012e49;
         font-family: "poppins", serif;
         font-weight: 300;
         font-size: 14px;
       }
-      .pricing{
+      .pricing {
         color: goldenrod;
         font-family: "DM Serif Display", serif;
         font-weight: 600;
         font-size: 20px;
       }
-      .roomContainer{
-        padding: 80px 30px 50px 30px;
+      .roomContainer {
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
         gap: 20px;
+        padding: 30px 15px;
+      }
+      .roomHero {
+        width: 100%;
+        padding: 70px 15px 50px 15px;
       }
     </style>
   </head>
@@ -109,7 +113,7 @@
             <li class="navItem nav-link">Facilities</li>
           </a>
           <a href="./accomodation.html">
-            <li class="navItem nav-link">Accomodation</li>
+            <li class="navItem nav-link">Accommodation</li>
           </a>
           <a href="./room.html">
             <li class="navItem nav-link">Room Price</li>
@@ -122,7 +126,9 @@
           </a>
         </ul>
         <div id="bookNow">
-          <a href="./booknow.html"><button class="nav-link"><span>Book Now</span></button></a>
+          <a href="./booknow.html"
+            ><button class="nav-link"><span>Book Now</span></button></a
+          >
         </div>
       </nav>
       <div class="hamburger">
@@ -144,43 +150,43 @@
     </section>
     <section class="roomContainer">
       <div class="roomCard">
-        <img src="./Images/superior.jpg" alt="">
+        <img src="./Images/superior.jpg" alt="" />
         <h3>Standard Room</h3>
         <span class="pricing">₦30,000 per Night</span>
         <span class="detail">Breakfast for One</span>
       </div>
       <div class="roomCard">
-        <img src="./Images/intro 2.jpg" alt="">
+        <img src="./Images/intro 2.jpg" alt="" />
         <h3>Superior Room</h3>
         <span class="pricing">₦35,000 per Night</span>
         <span class="detail">Breakfast for One</span>
       </div>
       <div class="roomCard">
-        <img src="./Images/executive.jpg" alt="">
+        <img src="./Images/executive.jpg" alt="" />
         <h3>Executive Room</h3>
         <span class="pricing">₦40,000 per Night</span>
         <span class="detail">Breakfast for One</span>
       </div>
       <div class="roomCard">
-        <img src="./Images/hotels.jpg" alt="">
+        <img src="./Images/hotels.jpg" alt="" />
         <h3>Queenabik Room</h3>
         <span class="pricing">₦45,000 per Night</span>
         <span class="detail">Breakfast for One</span>
       </div>
       <div class="roomCard">
-        <img src="./Images/queen.jpg" alt="">
+        <img src="./Images/queen.jpg" alt="" />
         <h3>Queen Room</h3>
         <span class="pricing">₦45,000 per Night</span>
         <span class="detail">Breakfast for One</span>
       </div>
       <div class="roomCard">
-        <img src="./Images/yemkol.jpg" alt="">
+        <img src="./Images/yemkol.jpg" alt="" />
         <h3>Yemkol Suite</h3>
         <span class="pricing">₦55,000 per Night</span>
         <span class="detail">Breakfast for Two</span>
       </div>
       <div class="roomCard">
-        <img src="./Images/TK suite.jpg" alt="">
+        <img src="./Images/TK suite.jpg" alt="" />
         <h3>TK Suite</h3>
         <span class="pricing">₦65,000 per Night</span>
         <span class="detail">Breakfast for Two</span>
@@ -189,7 +195,7 @@
     <footer>
       <div class="footer">
         <div class="footerSection">
-          <img src="./images/wingate logo.png" alt="wingate" />
+          <img src="./images/footer.png" alt="wingate" />
           <p id="brief">
             Wingate Exotic, Ilorin's premier luxury hotel offering unparalleled
             comfort and hospitality. Our tastefully appointed rooms and suites,
@@ -206,7 +212,7 @@
             <a href="./index.html"><li>Home</li></a>
             <a href="./about.html"><li>About</li></a>
             <a href="./facilities.html"><li>Facilities</li></a>
-            <a href="./accomodation.html"><li>Acomodation</li></a>
+            <a href="./accomodation.html"><li>Accommodation</li></a>
             <a href="./room.html"><li>Room Price</li></a>
             <a href="./contact.html"><li>Contact</li></a>
             <a href="./booknow.html"><li>Book Now</li></a>
@@ -229,8 +235,17 @@
           <form name="submit-to-google-sheet">
             <input type="email" name="Email" placeholder="Email" required />
             <button type="submit">
-              <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" fill="currentColor" class="bi bi-send-fill" viewBox="0 0 16 16">
-                <path d="M15.964.686a.5.5 0 0 0-.65-.65L.767 5.855H.766l-.452.18a.5.5 0 0 0-.082.887l.41.26.001.002 4.995 3.178 3.178 4.995.002.002.26.41a.5.5 0 0 0 .886-.083zm-1.833 1.89L6.637 10.07l-.215-.338a.5.5 0 0 0-.154-.154l-.338-.215 7.494-7.494 1.178-.471z"/>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="17"
+                height="17"
+                fill="currentColor"
+                class="bi bi-send-fill"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M15.964.686a.5.5 0 0 0-.65-.65L.767 5.855H.766l-.452.18a.5.5 0 0 0-.082.887l.41.26.001.002 4.995 3.178 3.178 4.995.002.002.26.41a.5.5 0 0 0 .886-.083zm-1.833 1.89L6.637 10.07l-.215-.338a.5.5 0 0 0-.154-.154l-.338-.215 7.494-7.494 1.178-.471z"
+                />
               </svg>
             </button>
           </form>
@@ -243,22 +258,23 @@
       </div>
     </footer>
     <script>
-      const scriptURL = 'https://script.google.com/macros/s/AKfycbyCf4caQxxYbR5vEMjyYfZTsTvJ3VWo76VBoyXDEf4NKeQ2XhkdkIqEERjXMgEvMvahOg/exec';
-      const form = document.forms['submit-to-google-sheet'];
+      const scriptURL =
+        "https://script.google.com/macros/s/AKfycbyCf4caQxxYbR5vEMjyYfZTsTvJ3VWo76VBoyXDEf4NKeQ2XhkdkIqEERjXMgEvMvahOg/exec";
+      const form = document.forms["submit-to-google-sheet"];
       const msg = document.getElementById("msg");
-    
-      form.addEventListener('submit', e => {
-        e.preventDefault()
-        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-          .then(response => {
-            msg.innerHTML = "Thank You for Subscribing!"
-            setTimeout(()=>{
-              msg.innerHTML = " "
+
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        fetch(scriptURL, { method: "POST", body: new FormData(form) })
+          .then((response) => {
+            msg.innerHTML = "Thank You for Subscribing!";
+            setTimeout(() => {
+              msg.innerHTML = " ";
             }, 5000);
             form.reset();
           })
-          .catch(error => console.error('Error!', error.message))
-      })
+          .catch((error) => console.error("Error!", error.message));
+      });
     </script>
     <script src="app.js"></script>
   </body>

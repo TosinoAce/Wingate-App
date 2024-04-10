@@ -138,7 +138,7 @@ nav {
   letter-spacing: 2px;
   text-align: center;
 }
-#heroContainer > button {
+#heroContainer button {
   padding: 7px 40px;
   outline: none;
   border: none;
@@ -150,7 +150,7 @@ nav {
   font-family: "DM Serif Display", serif;
   transition: 0.5s ease-in-out;
 }
-#heroContainer > button:hover {
+#heroContainer button:hover {
   background-color: transparent;
   color: goldenrod;
   border: 1px solid goldenrod;
@@ -343,8 +343,8 @@ nav {
   cursor: pointer;
   transition: 1s ease-in-out;
 }
-#bell {
-  width: 45px;
+#bellMobile {
+  display: none;
 }
 .subFacility p {
   font-size: 20px;
@@ -371,7 +371,6 @@ footer {
   background-image: url(./Images/wingate2.jpg);
   background-position: center;
   background-size: cover;
-  background-attachment: fixed;
   box-shadow: 0px 0px 7px -2px rgba(0, 0, 0, 0.8);
   border-top-right-radius: 35px;
   border-top-left-radius: 35px;
@@ -617,8 +616,11 @@ footer hr {
   .subFacility svg {
     width: 30px;
   }
-  #bell {
-    width: 30px;
+  #bellMobile {
+    display: block;
+  }
+  #bellDesktop {
+    display: none;
   }
   #first > div {
     padding: 20px;
@@ -663,5 +665,12 @@ footer hr {
   }
   .intro h2 {
     font-size: 25px;
+  }
+  .facility:after {
+    background: rgba(0, 0, 0, 0.2);
+  }
+  #heroContainer {
+    height: 100dvh;
+    background-attachment: scroll;
   }
 }
