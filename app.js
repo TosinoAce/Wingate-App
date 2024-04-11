@@ -1,3 +1,4 @@
+const loader = document.getElementById("preLoader");
 const hamburger = document.querySelector(".hamburger");
 const navMenu = document.querySelector(".navMenu");
 
@@ -12,6 +13,10 @@ document.querySelectorAll(".nav-link").forEach((n) =>
     navMenu.classList.remove("active");
   })
 );
+
+window.addEventListener("load", () => {
+  loader.style.display = "none";
+})
 
 function sendMail(){
     let parms = {
