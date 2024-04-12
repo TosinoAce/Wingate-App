@@ -461,6 +461,17 @@
         <p>Copyright©2024 Wingate Exotic</p>
       </div>
     </footer>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init({
+          publicKey: "vris0xm7VHDmNzXKM",
+        });
+      })();
+    </script>
     <script>
       const scriptURL =
         "https://script.google.com/macros/s/AKfycbyCf4caQxxYbR5vEMjyYfZTsTvJ3VWo76VBoyXDEf4NKeQ2XhkdkIqEERjXMgEvMvahOg/exec";
@@ -485,17 +496,6 @@
           })
           .catch((error) => console.error("Error!", error.message));
       });
-    </script>
-    <script
-      type="text/javascript"
-      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
-    ></script>
-    <script type="text/javascript">
-      (function () {
-        emailjs.init({
-          publicKey: "vris0xm7VHDmNzXKM",
-        });
-      })();
     </script>
     <script src="app.js"></script>
   </body>
