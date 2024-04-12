@@ -1,6 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-RV0E89CZ42"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-RV0E89CZ42");
+    </script>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Wingate Exotic-Accommodation</title>
@@ -344,14 +357,32 @@
             <button type="submit">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                width="17"
-                height="17"
+                width="16"
+                height="16"
                 fill="currentColor"
+                id="send"
                 class="bi bi-send-fill"
                 viewBox="0 0 16 16"
               >
                 <path
                   d="M15.964.686a.5.5 0 0 0-.65-.65L.767 5.855H.766l-.452.18a.5.5 0 0 0-.082.887l.41.26.001.002 4.995 3.178 3.178 4.995.002.002.26.41a.5.5 0 0 0 .886-.083zm-1.833 1.89L6.637 10.07l-.215-.338a.5.5 0 0 0-.154-.154l-.338-.215 7.494-7.494 1.178-.471z"
+                />
+              </svg>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="bi bi-arrow-clockwise loading hidden"
+                id="loading"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M8 3a5 5 0 1 0 4.546 2.914.5.5 0 0 1 .908-.417A6 6 0 1 1 8 2z"
+                />
+                <path
+                  d="M8 4.466V.534a.25.25 0 0 1 .41-.192l2.36 1.966c.12.1.12.284 0 .384L8.41 4.658A.25.25 0 0 1 8 4.466"
                 />
               </svg>
             </button>
@@ -369,8 +400,12 @@
         "https://script.google.com/macros/s/AKfycbyCf4caQxxYbR5vEMjyYfZTsTvJ3VWo76VBoyXDEf4NKeQ2XhkdkIqEERjXMgEvMvahOg/exec";
       const form = document.forms["submit-to-google-sheet"];
       const msg = document.getElementById("msg");
+      const send = document.getElementById("send");
+      const loading = document.getElementById("loading");
 
       form.addEventListener("submit", (e) => {
+        send.classList.add("hidden");
+        loading.classList.remove("hidden");
         e.preventDefault();
         fetch(scriptURL, { method: "POST", body: new FormData(form) })
           .then((response) => {
@@ -379,6 +414,8 @@
               msg.innerHTML = " ";
             }, 5000);
             form.reset();
+            send.classList.remove("hidden");
+            loading.classList.add("hidden");
           })
           .catch((error) => console.error("Error!", error.message));
       });

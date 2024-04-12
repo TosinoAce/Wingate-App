@@ -13,10 +13,10 @@ body {
   overflow-x: hidden;
 }
 /* loader css */
-#preLoader{
+#preLoader {
   width: 100vw;
   height: 100vh;
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   background-color: #ffffff;
@@ -47,8 +47,22 @@ body {
 .loader:after {
   animation-duration: 4s;
 }
+.loading {
+  animation: spin 1000ms infinite linear;
+  width: 20px;
+}
+.hidden {
+  display: none;
+}
 
-
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
 
 @keyframes l24 {
   100% {
