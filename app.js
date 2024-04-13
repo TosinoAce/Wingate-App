@@ -26,7 +26,7 @@ function sendMail() {
     message: document.getElementById("message").value,
   };
 
-  emailjs.send("service_y22rmoc", "template_x10guo3", parms).then((res) => {
+  emailjs.send("service_6xz40fd", "template_x10guo3", parms).then((res) => {
     document.getElementById("firstname").value = "";
     document.getElementById("lastname").value = "";
     document.getElementById("email").value = "";
