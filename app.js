@@ -31,7 +31,6 @@ function sendMail() {
     document.getElementById("lastname").value = "";
     document.getElementById("email").value = "";
     document.getElementById("message").value = "";
-    console.log(res);
-    alert("Thank You For Reaching Out to Us.")
+    alert("Thank You For Reaching Out to Us.");
   }).catch((err) => console.log(err));
 }
