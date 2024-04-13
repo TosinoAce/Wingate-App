@@ -16,15 +16,22 @@ document.querySelectorAll(".nav-link").forEach((n) =>
 
 window.addEventListener("load", () => {
   loader.style.display = "none";
-})
+});
 
-function sendMail(){
-    let parms = {
-        firstName : document.getElementById("firstname").value,
-        lastName : document.getElementById("lastname").value,
-        email : document.getElementById("email").value,
-        message : document.getElementById("message").value,
-    }
+function sendMail() {
+  let parms = {
+    firstName: document.getElementById("firstname").value,
+    lastName: document.getElementById("lastname").value,
+    email: document.getElementById("email").value,
+    message: document.getElementById("message").value,
+  };
 
-    emailjs.send("service_y22rmoc","template_x10guo3",parms).then(alert("Thank You for Connecting with us."))
+  emailjs.send("service_y22rmoc", "template_x10guo3", parms).then((res) => {
+    document.getElementById("firstname").value = "";
+    document.getElementById("lastname").value = "";
+    document.getElementById("email").value = "";
+    document.getElementById("message").value = "";
+    console.log(res);
+    alert("Thank You For Reaching Out to Us.")
+  }).catch((err) => console.log(err));
 }
