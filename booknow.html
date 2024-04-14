@@ -225,31 +225,31 @@
       </div>
     </section>
     <section class="bookContainer" id="reserve">
-      <form id="booknow-form">
+      <form action="https://formspree.io/f/xayrlvgv" id="booknow-form">
         <div>
           <div>
             <label for="">Full Name</label>
-            <input type="text" required placeholder="John Doe" />
+            <input type="text" required placeholder="John Doe" name="Name" />
           </div>
           <div>
             <label for="">Email</label>
-            <input type="email" required placeholder="example@gmail.com" />
+            <input type="email" required placeholder="example@gmail.com" name="Email"/>
           </div>
         </div>
         <div>
           <div>
             <label for="checkIn">Check In</label>
-            <input type="datetime-local" id="checkIn" required />
+            <input type="datetime-local" id="checkIn" required name="Check In Date & Time"/>
           </div>
           <div>
             <label for="checkOut">Check Out</label>
-            <input type="datetime-local" id="checkOut" required />
+            <input type="datetime-local" id="checkOut" required  name="Check Out Date & Time"/> />
           </div>
         </div>
         <div>
           <div>
             <label for="adult">Adult</label>
-            <select name="adult" id="adult" required>
+            <select name="No of Adult" id="adult" required>
               <option value="1-Adult">1 Adult</option>
               <option value="2-Adults">2 Adults</option>
               <option value="3-Adults">3 Adults</option>
@@ -260,7 +260,7 @@
           </div>
           <div>
             <label for="children">Children</label>
-            <select name="children" id="children" required>
+            <select name="No of children" id="children" required>
               <option value="1-Child">1 Child</option>
               <option value="2-Children">2 Children</option>
               <option value="3-Children">3 Children</option>
@@ -273,7 +273,7 @@
         <div>
           <div>
             <label for="rooms">Rooms</label>
-            <select name="rooms" id="rooms" required>
+            <select name="No of Rooms" id="rooms" required>
               <option value="1-Room">1 Room</option>
               <option value="2-Rooms">2 Rooms</option>
               <option value="3-Rooms">3 Rooms</option>
